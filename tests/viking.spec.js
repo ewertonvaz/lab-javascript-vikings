@@ -358,7 +358,8 @@ describe('War', () => {
       });
 
       it('should return "Vikings have won the war of the century!", if the Saxons array is empty', () => {
-        war.vikingAttack();
+        // war.vikingAttack();
+        war.attack("viking");
         expect(war.showStatus()).toEqual(
           'Vikings have won the war of the century!'
         );
@@ -366,7 +367,8 @@ describe('War', () => {
 
       it('should return "Saxons have fought for their lives and survived another day...", if the Vikings array is empty', () => {
         for (let i = 0; i < 12; i++) {
-          war.saxonAttack();
+          war.attack("saxon");
+          // war.saxonAttack();
         }
         expect(war.showStatus()).toEqual(
           'Saxons have fought for their lives and survived another day...'

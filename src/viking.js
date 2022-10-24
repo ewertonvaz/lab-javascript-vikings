@@ -117,12 +117,11 @@ class War {
                 this.vikingArmy.splice(vikingIndex, 1);
             }
         }
-
+        console.log("S:", this.saxonArmy.length, "V:", this.vikingArmy.length );
         return resultOfAttack;
     }
 
     showStatus(){
-        console.log("S:", this.saxonArmy.length, "V:", this.vikingArmy.length );
         if (this.saxonArmy.length === 0) {
             return "Vikings have won the war of the century!";
         }
